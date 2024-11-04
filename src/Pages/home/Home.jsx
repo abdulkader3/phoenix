@@ -18,18 +18,18 @@ const Home = () => {
 
 
       {/* option part */}
-      <div className=" optionPart w-full  flex mt-2 p-5 flex-wrap gap-8 text-[10px] ">
-        <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDVyhgCbIQ8dQDqf2j_x6vWdLtylej4otq1Q&s" alt="option" /> Bkash send money </Link>
+      <div className=" optionPart w-full  flex mt-2 p-5 flex-wrap gap-4 text-[12px] font-bold ">
+        <Link className=' flex flex-col items-center ml-4 ' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDVyhgCbIQ8dQDqf2j_x6vWdLtylej4otq1Q&s" alt="option" /> Bkash </Link>
         <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://downloadr2.apkmirror.com/wp-content/uploads/2020/07/10/5f094774bdb14-384x384.png" alt="option" /> Nagad </Link>
-                <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://pngtom.com/files/preview/960x960/317020431739wsqe06kdzz8abbcj9ubb1txjumovorxogdiwsxfdahjy5lxcole5zugbetwsrclps4hvvlt84nfffvkb7aeykoiptprmrlpzsux.png" alt="option" /> Rocket </Link>
-                <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://play-lh.googleusercontent.com/ArowgQs3NWtBgXbtJT67dHR9gMvNq6IZyssJCDKtxh-_qsKQlRrmBQy3Fq2Pdw0RSkE" alt="option" /> Opay </Link>
-                <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://zarss-bibm.s3-ap-southeast-1.amazonaws.com/bibm_org/members_photo/U8Q06e47ryjD2Pehh6dkTcCdloyqwyklpEQxbtd9.jpeg" alt="option" /> Dutch.Bangla</Link>
-                <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://media.istockphoto.com/id/1141778521/vector/mobile-phone-vibrating-or-ringing-flat-vector-icon-for-apps-and-websites.jpg?s=612x612&w=0&k=20&c=DdQVkRexW_o2b86c4yqz24UpNpUA0IIVTS2_tFXECjo=" alt="option" /> Balance.recharge </Link>
-                <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://cdn.pixabay.com/photo/2023/12/26/04/55/bank-8469480_960_720.png" alt="option" /> Bank transfer </Link>
-                <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://media.istockphoto.com/id/1141778521/vector/mobile-phone-vibrating-or-ringing-flat-vector-icon-for-apps-and-websites.jpg?s=612x612&w=0&k=20&c=DdQVkRexW_o2b86c4yqz24UpNpUA0IIVTS2_tFXECjo=" alt="option" /> Minute.recharge </Link>
+                <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa72jjxmBhP7jDcL_d2ONde0G1ztGDxpfe9Q&s" alt="option" /> Rocket </Link>
+                <Link className='flex  flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://play-lh.googleusercontent.com/ArowgQs3NWtBgXbtJT67dHR9gMvNq6IZyssJCDKtxh-_qsKQlRrmBQy3Fq2Pdw0RSkE" alt="option" /> Opay </Link>
+                <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://media.istockphoto.com/id/1141778521/vector/mobile-phone-vibrating-or-ringing-flat-vector-icon-for-apps-and-websites.jpg?s=612x612&w=0&k=20&c=DdQVkRexW_o2b86c4yqz24UpNpUA0IIVTS2_tFXECjo=" alt="option" /> Balance </Link>
+                <Link className='flex ml-4 flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://media.istockphoto.com/id/1141778521/vector/mobile-phone-vibrating-or-ringing-flat-vector-icon-for-apps-and-websites.jpg?s=612x612&w=0&k=20&c=DdQVkRexW_o2b86c4yqz24UpNpUA0IIVTS2_tFXECjo=" alt="option" /> Minute </Link>
 
-        <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="photos/mdrcharge.png" alt="option" /> MB Recharge </Link>
+        <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="photos/mdrcharge.png" alt="option" /> MB  </Link>
         <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://play-lh.googleusercontent.com/HMzdrJUMVF1ssfIjsX5kDZ2zQmTJCeyHEZVASXC6aAMZsp-WX2AXP6RECh1x_L44-eI" alt="option" /> IBBL iSmart </Link>
+        <Link className='flex flex-col items-center' to='#'> <img className=' w-[30px] overflow-hidden rounded-xl ' src="https://cdn.pixabay.com/photo/2023/12/26/04/55/bank-8469480_960_720.png" alt="option" /> Bank transfer </Link>
+
 
       </div>
       {/* option part */}
