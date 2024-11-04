@@ -103,7 +103,7 @@ const Login = () => {
           
           <br/>
 
-          <button className='w-full bg-transparent h-[40px] border-[3px] rounded-xl my-3 pl-[20px] hover:scale-95 active:scale-100 transition-all '> Register  </button>
+          <button className='w-full bg-transparent h-[40px] border-[3px] rounded-xl my-3 pl-[20px] hover:scale-95 active:scale-100 transition-all '> Login  </button>
 
 
            <Link className='mb-5 mt-10' to='/registration'> Don't have an account ? Register  </Link> 
