@@ -1,6 +1,6 @@
 
 .registrationPage{
-    @apply w-full h-screen bg-[url(../../../public/photos/bg.jpeg)]  px-5 lg:px-[500px] md:px-[140px] flex flex-col items-center;
+    @apply w-full h-screen bg-[url(../../../public/photos/bg.jpeg)]   px-5 lg:px-[500px] md:px-[140px] flex flex-col items-center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

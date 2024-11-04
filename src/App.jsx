@@ -2,7 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import './App.css'
 import Login from './Pages/login/Login'
 import Registration from './Pages/registration/Registration'
-import Home from './Pages/Home'
+import Home from './Pages/home/Home'
 
 function App() {
 

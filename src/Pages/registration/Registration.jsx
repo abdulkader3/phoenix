@@ -72,10 +72,10 @@ const Registration = () => {
 
     <div className="registrationPage ">
 
-        <h1 className=' my-[30px] font-bold text-4xl text-white '> Registration </h1>
+        <h1 className=' my-3 md:my-[30px] font-bold text-4xl text-white '> Registration </h1>
 
 
-        <form onSubmit={submit} className='registrationForm w-full  p-[10px] flex flex-col items-center '>
+        <form onSubmit={submit} className='registrationForm w-full   p-[10px] flex flex-col items-center '>
 
           <div className=" w-full ">
           <p>Name</p>
