@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { Bounce, toast } from "react-toastify";
 
 const Login = () => {
   // ===Use state for validation
@@ -32,6 +34,12 @@ const Login = () => {
     setconfirmErorr("");
   };
 
+  // firebase
+  const auth = getAuth();
+
+  // logic
+  const navigate = useNavigate()
+
   // ===submit form Validation logic
   const submit = (e) => {
     e.preventDefault();
@@ -41,7 +49,58 @@ const Login = () => {
     } else if (!password) {
       setpasswordErorr("Please enter your password");
     } else {
-      console.log("ok");
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          console.log(user)
+          if(user.emailVerified == false){
+            toast('Please verify your email', {
+              position: "top-right",
+              autoClose: 1500,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Bounce,
+              });
+          }else{
+            toast('Login success', {
+              position: "top-right",
+              autoClose: 1500,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Bounce,
+              });
+              navigate('/home')
+          }
+          
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          console.log(errorCode)
+          if(errorCode == 'auth/invalid-credential'){
+            toast('Email or Password Error', {
+              position: "top-right",
+              autoClose: 1500,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Bounce,
+              });
+          }
+        });
+      
     }
   };
 

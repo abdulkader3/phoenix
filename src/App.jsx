@@ -4,6 +4,9 @@ import Login from './Pages/login/Login'
 import Registration from './Pages/registration/Registration'
 import Home from './Pages/home/Home'
 import Transfer from './Pages/transfer/Transfer'
+import app from './firebase.config'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -23,6 +26,7 @@ function App() {
     <>
 
     <RouterProvider router={Phoenix}/>
+    <ToastContainer />
 
     </>
   )
