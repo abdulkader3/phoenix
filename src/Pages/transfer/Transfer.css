@@ -1,0 +1,24 @@
+.transferMain{
+    @apply w-full h-screen
+}
+
+.amount{
+    -webkit-appearance: none;
+    margin: 0;
+    
+}
+.amount{
+    -moz-appearance: textfield;
+
+}
+
+.optionManu{
+    @apply border w-[160px] py-2 rounded-lg px-3  flex items-center gap-5 justify-center
+}
+.optionManuor{
+    @apply border w-[100px] py-2 rounded-lg px-1  flex items-center gap-5 justify-center
+}
+
+.pinPlace::placeholder{
+    @apply text-[45px] 
+}

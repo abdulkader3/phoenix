@@ -1,9 +1,4 @@
-.homePage{
-    @apply w-full h-screen bg-[url(../../../public/photos/bg.jpeg)] ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .homeNav{
     background: transparent;
   color: #fff;

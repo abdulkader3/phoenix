@@ -3,6 +3,7 @@ import './App.css'
 import Login from './Pages/login/Login'
 import Registration from './Pages/registration/Registration'
 import Home from './Pages/home/Home'
+import Transfer from './Pages/transfer/Transfer'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Login/>}/>
         <Route path='/registration' element={<Registration/>}/>
         <Route path='/home' element={<Home/>}/>
+        <Route path='/transfer' element={<Transfer/>}/>
       </Route>
     )
   )
