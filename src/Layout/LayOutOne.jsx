@@ -1,7 +1,19 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { Outlet, useNavigate } from 'react-router-dom'
 
 const LayOutOne = () => {
+
+  // Security
+  const navigate = useNavigate()
+  const userDataFromRedux = useSelector((state)=>state.info.userData)
+
+  useEffect(()=>{
+    if(userDataFromRedux == null ){
+      navigate('/login')
+    }
+  },[userDataFromRedux])
+  
   return (
     <div>
 

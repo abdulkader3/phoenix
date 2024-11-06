@@ -3,24 +3,22 @@ import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { Bounce, toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { userData } from "../../Slice/SliceUser";
 
 const Login = () => {
-  // ===Use state for validation
-  // const [name, setname] = useState("");
-  // const [nameErorr, setnameErorr] = useState("");
+  
   const [email, setemail] = useState("");
   const [emailErorr, setemailErorr] = useState("");
   const [password, setpassword] = useState("");
   const [passwordErorr, setpasswordErorr] = useState("");
-  // const [confirm , setconfirm] = useState('')
-  // const [confirmErorr , setconfirmErorr] = useState('')
+
+  // data from redux
+  const dispatch = useDispatch()
+
 
   // Enhancing performance
 
-  // const nameOnchang = (e) => {
-  //   setname(e.target.value);
-  //   setnameErorr("");
-  // };
   const emailOnchang = (e) => {
     setemail(e.target.value);
     setemailErorr("");
@@ -53,7 +51,8 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user)
+          dispatch(userData(user))
+          localStorage.setItem('ClintInfo' , JSON.stringify(user))
           if(user.emailVerified == false){
             toast('Please verify your email', {
               position: "top-right",

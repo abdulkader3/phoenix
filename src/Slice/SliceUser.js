@@ -4,13 +4,13 @@ export const userSlice = createSlice({
   name: 'User',
   initialState: {
 
-    userData: null,
+    userData: JSON.parse(localStorage.getItem('ClintInfo')) ? JSON.parse(localStorage.getItem('ClintInfo')) : null,
 
   },
 
   reducers: {
    
-    UserData: (state, action) => {
+    userData: (state, action) => {
       state.value = action.payload
     },
   },
