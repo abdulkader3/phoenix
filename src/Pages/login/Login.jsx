@@ -5,6 +5,8 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { Bounce, toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { userData } from "../../Slice/SliceUser";
+import { getDatabase, ref, set } from "firebase/database";
+
 
 const Login = () => {
   
@@ -34,6 +36,7 @@ const Login = () => {
 
   // firebase
   const auth = getAuth();
+  const db = getDatabase();
 
   // logic
   const navigate = useNavigate()
@@ -78,6 +81,15 @@ const Login = () => {
               transition: Bounce,
               });
               navigate('/')
+
+              // set data in real-time-database
+              set(ref(db, "ClintList/" + user.uid), {
+                username: user.displayName,
+                email: user.email,
+                profile_picture: user.photoURL,
+                uid: user.uid,
+              });
+              // set data in real-time-database
           }
           
           // ...
