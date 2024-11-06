@@ -30,28 +30,82 @@ const TransferISmart = () => {
             </Link>
           </div>
 
-          
+          {/* name list */}
+
+          <p className="font-bold mt-10">Beneficiary Name :</p>
+
+          <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll  mt-2 ">
+            <input
+              className="w-full h-full outline-none text-black"
+              type="text"
+            />
+          </div>
+
+          {/* name list */}
+          {/* bank list */}
+
+          <p className="font-bold mt-2">Bank :</p>
+
+          <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll  mt-2 ">
+            <input
+              className="w-full h-full outline-none text-black"
+              type="text"
+            />
+          </div>
+
+          {/* bank list */}
+
+          {/* city list */}
+          <p className="font-bold mt-2">District :</p>
+          <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll mt-2  ">
+            <input
+              className="w-full h-full outline-none text-black"
+              type="text"
+            />
+          </div>
+          {/* city list */}
+
+          {/* branch list */}
+          <p className="font-bold mt-2">Branch :</p>
+          <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll mt-2  ">
+            <input
+              className="w-full h-full outline-none text-black"
+              type="text"
+            />
+          </div>
+          {/* branch list */}
 
           <div className="w-full mt-5 px-5 relative ">
             <input
               className=" border outline-none text-purple-700 amount pl-5 w-full h-[50px]  rounded-md "
               type="number"
-              placeholder="Number"
+              placeholder="A/C"
             />
-            <p className=" absolute top-3 right-10 text-[#32323288] ">
-             iSmart
-            </p>
+            <p className=" absolute top-3 right-10 text-[#32323288] "> Number </p>
           </div>
 
-          
-
-          <div className=" w-full mt-4 ">
-          <input
+          <div className=" w-full mt-10 ">
+            <input
               className=" pinPlace border outline-none text-purple-700 amount pl-5 w-full h-[50px] text-[45px]  rounded-md "
               type="number"
               placeholder="  *    *    *    *   "
             />
           </div>
+
+          {/* messege box */}
+          <div className="w-full h-[150px] bg-transparent  rounded-2xl mt-10 ">
+            <label htmlFor="massage"></label>
+            <textarea
+              className="w-full h-full outline-none rounded-2xl p-5 bg-transparent border-[3px] "
+              name="massage"
+              id="massage"
+            ></textarea>
+          </div>
+          {/* messege box */}
+
+          
+
+         
 
           <button className=" w-full bg-white text-blue-700 mt-10 rounded-lg font-bold hover:scale-95 active:scale-100 transition-all py-4 ">
             {" "}

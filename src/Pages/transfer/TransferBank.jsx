@@ -30,9 +30,21 @@ const TransferBank = () => {
             </Link>
           </div>
 
+          {/* name list */}
+
+          <p className="font-bold mt-10">Beneficiary Name :</p>
+
+          <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll  mt-2 ">
+            <input
+              className="w-full h-full outline-none text-black"
+              type="text"
+            />
+          </div>
+
+          {/* name list */}
           {/* bank list */}
 
-          <p className="font-bold mt-10">Bank :</p>
+          <p className="font-bold mt-2">Bank :</p>
 
           <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll  mt-2 ">
             <input
@@ -44,7 +56,7 @@ const TransferBank = () => {
           {/* bank list */}
 
           {/* city list */}
-          <p className="font-bold mt-5">City :</p>
+          <p className="font-bold mt-2">District :</p>
           <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll mt-2  ">
             <input
               className="w-full h-full outline-none text-black"
@@ -54,7 +66,7 @@ const TransferBank = () => {
           {/* city list */}
 
           {/* branch list */}
-          <p className="font-bold mt-5">Branch :</p>
+          <p className="font-bold mt-2">Branch :</p>
           <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll mt-2  ">
             <input
               className="w-full h-full outline-none text-black"
@@ -67,12 +79,12 @@ const TransferBank = () => {
             <input
               className=" border outline-none text-purple-700 amount pl-5 w-full h-[50px]  rounded-md "
               type="number"
-              placeholder="Number"
+              placeholder="A/C"
             />
-            <p className=" absolute top-3 right-10 text-[#32323288] "> Bank </p>
+            <p className=" absolute top-3 right-10 text-[#32323288] "> Number </p>
           </div>
 
-          <div className=" w-full mt-4 ">
+          <div className=" w-full mt-10 ">
             <input
               className=" pinPlace border outline-none text-purple-700 amount pl-5 w-full h-[50px] text-[45px]  rounded-md "
               type="number"
