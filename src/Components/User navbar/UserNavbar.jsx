@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 
 const UserNavbar = () => {
    // rudux 
-   const clintInfo = useSelector((state)=>state.info.userData)
+   const clintInfo = useSelector((state)=>state.info.userdata)
 
 
    

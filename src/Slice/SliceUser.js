@@ -4,7 +4,7 @@ export const userSlice = createSlice({
   name: 'User',
   initialState: {
 
-    userData: JSON.parse(localStorage.getItem('ClintInfo')) ? JSON.parse(localStorage.getItem('ClintInfo')) : null,
+    userdata: JSON.parse(localStorage.getItem('ClintInfo')) ? JSON.parse(localStorage.getItem('ClintInfo')) : null,
 
   },
 

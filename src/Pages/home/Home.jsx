@@ -45,7 +45,7 @@ const Home = () => {
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
-              src="https://play-lh.googleusercontent.com/ArowgQs3NWtBgXbtJT67dHR9gMvNq6IZyssJCDKtxh-_qsKQlRrmBQy3Fq2Pdw0RSkE"
+              src="https://africanjournal.co/wp-content/uploads/2021/10/Opay-Logo-300x300.jpg.webp"
               alt="option"
             />{" "}
             Opay{" "}

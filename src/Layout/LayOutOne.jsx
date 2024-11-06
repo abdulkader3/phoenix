@@ -6,13 +6,13 @@ const LayOutOne = () => {
 
   // Security
   const navigate = useNavigate()
-  const userDataFromRedux = useSelector((state)=>state.info.userData)
+  const userDataFromRedux = useSelector((state)=>state.info.userdata)
 
   useEffect(()=>{
     if(userDataFromRedux == null ){
       navigate('/login')
     }
-  },[userDataFromRedux])
+  },[])
   
   return (
     <div>

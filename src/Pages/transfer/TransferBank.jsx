@@ -30,19 +30,38 @@ const TransferBank = () => {
             </Link>
           </div>
 
-          <div className=" text-white font-bold flex flex-col w-full items-end gap-2 mt-5 ">
-            {/* cash in cash out option */}
-            <div className=" optionManu">
-              <label htmlFor="SendMoney">Send Money</label>{" "}
-              <input name="option" id="SendMoney" type="radio" />
-            </div>
+          {/* bank list */}
 
-            <div className=" optionManu">
-              <label htmlFor="CashOut">Cash out</label>{" "}
-              <input name="option" id="CashOut" type="radio" />
-            </div>
-            {/* cash in cash out option */}
+          <p className="font-bold mt-10">Bank :</p>
+
+          <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll  mt-2 ">
+            <input
+              className="w-full h-full outline-none text-black"
+              type="text"
+            />
           </div>
+
+          {/* bank list */}
+
+          {/* city list */}
+          <p className="font-bold mt-5">City :</p>
+          <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll mt-2  ">
+            <input
+              className="w-full h-full outline-none text-black"
+              type="text"
+            />
+          </div>
+          {/* city list */}
+
+          {/* branch list */}
+          <p className="font-bold mt-5">Branch :</p>
+          <div className=" w-full h-[50px] rounded-2xl border  overflow-x-scroll mt-2  ">
+            <input
+              className="w-full h-full outline-none text-black"
+              type="text"
+            />
+          </div>
+          {/* branch list */}
 
           <div className="w-full mt-5 px-5 relative ">
             <input
@@ -50,34 +69,27 @@ const TransferBank = () => {
               type="number"
               placeholder="Number"
             />
-            <p className=" absolute top-3 right-10 text-[#32323288] ">
-              {" "}
-              Bank{" "}
-            </p>
+            <p className=" absolute top-3 right-10 text-[#32323288] "> Bank </p>
           </div>
-
-          {/* AAgent or personal*/}
-          <div className=" w-full flex gap-10 mt-4 justify-center  ">
-
-          <div className=" optionManuor">
-              <label htmlFor="agent">Agent </label>{" "}
-              <input name="or" id="agent" type="radio" />
-            </div>
-
-            <div className=" optionManuor">
-              <label htmlFor="personal">Personal</label>{" "}
-              <input name="or" id="personal" type="radio" />
-            </div>
-          </div>
-          {/* AAgent or personal*/}
 
           <div className=" w-full mt-4 ">
-          <input
+            <input
               className=" pinPlace border outline-none text-purple-700 amount pl-5 w-full h-[50px] text-[45px]  rounded-md "
               type="number"
               placeholder="  *    *    *    *   "
             />
           </div>
+
+          {/* messege box */}
+          <div className="w-full h-[150px] bg-transparent  rounded-2xl mt-10 ">
+            <label htmlFor="massage"></label>
+            <textarea
+              className="w-full h-full outline-none rounded-2xl p-5 bg-transparent border-[3px] "
+              name="massage"
+              id="massage"
+            ></textarea>
+          </div>
+          {/* messege box */}
 
           <button className=" w-full bg-white text-blue-700 mt-10 rounded-lg font-bold hover:scale-95 active:scale-100 transition-all py-4 ">
             {" "}

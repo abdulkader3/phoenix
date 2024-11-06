@@ -1,5 +1,12 @@
 .transferMain{
-    @apply w-full h-screen
+    @apply w-full h-screen overflow-y-scroll ;
+    scrollbar-width: none;
+
+}
+
+.OfferList{
+    @apply w-full h-[200px] overflow-y-scroll mt-10 ;
+    scrollbar-width: none;
 }
 
 .amount{
@@ -17,6 +24,9 @@
 }
 .optionManuor{
     @apply border w-[100px] py-2 rounded-lg px-1  flex items-center gap-5 justify-center
+}
+.optionManuoB{
+    @apply border w-[80px] py-2 rounded-lg px-1  flex items-center gap-5 justify-center text-[10px]
 }
 
 .pinPlace::placeholder{
