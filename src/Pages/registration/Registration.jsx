@@ -86,7 +86,7 @@ const Registration = () => {
               // Email verification sent!
               // ...
             });
-            navigate("/");
+            navigate("/login");
             toast('Register success verification mail sent', {
               position: "top-right",
               autoClose: 1500,
@@ -210,7 +210,7 @@ const Registration = () => {
             Register{" "}
           </button>
 
-          <Link to="/"> Already have an account ? Login </Link>
+          <Link to="/login"> Already have an account ? Login </Link>
         </form>
       </div>
     </>

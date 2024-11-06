@@ -78,7 +78,7 @@ const Login = () => {
               theme: "dark",
               transition: Bounce,
               });
-              navigate('/home')
+              navigate('/')
           }
           
           // ...

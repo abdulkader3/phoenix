@@ -20,7 +20,7 @@ const Home = () => {
             />{" "}
             Bkash{" "}
           </Link>
-          <Link className="flex flex-col items-center" to="/transfer">
+          <Link className="flex flex-col items-center" to="/transfernagad">
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
@@ -29,7 +29,7 @@ const Home = () => {
             />{" "}
             Nagad{" "}
           </Link>
-          <Link className="flex flex-col items-center" to="/transfer">
+          <Link className="flex flex-col items-center" to="/transferrocket">
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
@@ -38,7 +38,7 @@ const Home = () => {
             />{" "}
             Rocket{" "}
           </Link>
-          <Link className="flex  flex-col items-center" to="/transfer">
+          <Link className="flex  flex-col items-center" to="/transferopay">
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
@@ -47,7 +47,7 @@ const Home = () => {
             />{" "}
             Opay{" "}
           </Link>
-          <Link className="flex flex-col items-center" to="/transfer">
+          <Link className="flex flex-col items-center" to="/transferbalence">
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
@@ -56,7 +56,7 @@ const Home = () => {
             />{" "}
             Balance{" "}
           </Link>
-          <Link className="flex ml-4 flex-col items-center" to="/transfer">
+          <Link className="flex ml-4 flex-col items-center" to="/transferminute">
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
@@ -66,7 +66,7 @@ const Home = () => {
             Minute{" "}
           </Link>
 
-          <Link className="flex flex-col items-center" to="/transfer">
+          <Link className="flex flex-col items-center" to="/transfermd">
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
@@ -75,7 +75,7 @@ const Home = () => {
             />{" "}
             MB{" "}
           </Link>
-          <Link className="flex flex-col items-center" to="/transfer">
+          <Link className="flex flex-col items-center" to="/transferismart">
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
@@ -84,7 +84,7 @@ const Home = () => {
             />{" "}
             IBBL iSmart{" "}
           </Link>
-          <Link className="flex flex-col items-center" to="/transfer">
+          <Link className="flex flex-col items-center" to="/transferbank">
             {" "}
             <img
               className=" w-[30px] overflow-hidden rounded-xl "
