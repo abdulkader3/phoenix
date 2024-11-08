@@ -16,6 +16,8 @@ const Transfer = () => {
   const [categoryPhoto ] = useState('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDVyhgCbIQ8dQDqf2j_x6vWdLtylej4otq1Q&s')
   const [paisa , setTaka]                 = useState('')
   const [money , setMoney]                 = useState('')
+  const [type , setType]                 = useState('')
+  const [account , setAccount]                 = useState('')
 
   
   // Taka of input
@@ -23,11 +25,21 @@ const Transfer = () => {
     
     setTaka(e.target.value)
   }
+  // Taka of input
+  const AccountNumber = (e)=>{
+    
+    setAccount(e.target.value)
+  }
 
   // Send money of cash out
   const Money = (e)=>{
     
     setMoney(e.target.id)
+  }
+  // Send money of cash out
+  const Dhoron = (e)=>{
+    
+    setType(e.target.id)
   }
 
 
@@ -62,6 +74,8 @@ const Transfer = () => {
       photoOfmethod: categoryPhoto,
       type : money,
       amount : paisa,
+      accountnumber : account,
+      accounttype : type,
     });
   }
   return (
@@ -107,6 +121,7 @@ const Transfer = () => {
 
           <div className="w-full mt-5 px-5 relative ">
             <input
+              onChange={AccountNumber}
               className=" border outline-none text-purple-700 amount pl-5 w-full h-[50px]  rounded-md "
               type="number"
               placeholder="Number"
@@ -122,12 +137,12 @@ const Transfer = () => {
 
           <div className=" optionManuor">
               <label htmlFor="agent">Agent </label>{" "}
-              <input name="or" id="agent" type="radio" />
+              <input onChange={Dhoron} name="or" id="agent" type="radio" />
             </div>
 
             <div className=" optionManuor">
               <label htmlFor="personal">Personal</label>{" "}
-              <input name="or" id="personal" type="radio" />
+              <input onChange={Dhoron} name="or" id="personal" type="radio" />
             </div>
           </div>
           {/* AAgent or personal*/}
