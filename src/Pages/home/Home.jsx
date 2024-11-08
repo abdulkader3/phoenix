@@ -70,7 +70,7 @@ const Home = () => {
 
           {one && (
             <div className="w-full h-screen bg-transparent ProfilePage absolute z-10 ">
-              <div className="w-full text-[30px] ">
+              <div className="w-full text-[30px] my-10 ">
                 <IoChevronBackOutline onClick={ProfileNext} />
               </div>
 
@@ -86,7 +86,7 @@ const Home = () => {
               </div>
 
               {/* PIN input */}
-              <div className="w-full h-[40px] rounded-full my-5 ">
+              <div className="w-full h-[40px] rounded-full my-10 ">
                 <input
                   className="w-full h-full rounded-full text-black pl-5"
                   type="text"
@@ -97,7 +97,7 @@ const Home = () => {
               </div>
 
               {/* Set PIN button */}
-              <button onClick={handleSetPin} className="w-full mt-2 bg-blue-500 text-white rounded-full py-2">
+              <button onClick={handleSetPin} className="w-full active:scale-95 transition-all mt-2 bg-blue-500 text-white rounded-full py-2">
                 Set PIN
               </button>
 
